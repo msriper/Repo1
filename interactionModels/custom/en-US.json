@@ -1,0 +1,371 @@
+{
+  "interactionModel": {
+    "dialog": {
+      "intents": [
+        {
+          "slots": [
+            {
+              "name": "month",
+              "elicitationRequired": true,
+              "type": "AMAZON.Month",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1285019817518.983326554255"
+              }
+            },
+            {
+              "name": "day",
+              "elicitationRequired": true,
+              "type": "AMAZON.Ordinal",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1285019817518.1243416272784"
+              }
+            },
+            {
+              "name": "year",
+              "elicitationRequired": true,
+              "type": "AMAZON.FOUR_DIGIT_NUMBER",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1285019817518.687737903692"
+              }
+            }
+          ],
+          "name": "CaptureZodiacSignIntent",
+          "confirmationRequired": false,
+          "prompts": {}
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "multipleValues": {
+                "enabled": true
+              },
+              "name": "month",
+              "type": "AMAZON.Month"
+            },
+            {
+              "multipleValues": {
+                "enabled": true
+              },
+              "name": "day",
+              "type": "AMAZON.Ordinal"
+            },
+            {
+              "multipleValues": {
+                "enabled": true
+              },
+              "name": "year",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER"
+            }
+          ],
+          "name": "CaptureZodiacSignIntent",
+          "samples": [
+            "what is my zodiac sign",
+            "what would you need from me to get me my zodiac sign",
+            "I was born on {month} {day} {year} what is my zodiac sign",
+            "Zodiac check born {month} {day} {year} who am I in the stars",
+            "My birthday is {month} {day} {year} which zodiac does that make me",
+            "Born on {month} {day} {year} what does astrology say",
+            "So I came into this world on {month} {day} {year} what is my star sign",
+            "I was born on {month} {day} but not sure of the year what zodiac sign applies",
+            "Born on {day} sometime in {year} can you guess my zodiac",
+            "My birthday is {month} in {year} I forgot the day",
+            "The day might have been {day} month unsure year is {year} what zodiac fits",
+            "Just {month} {year} is all I remember which signs match that",
+            "Born in {month} sometime in the late {year} I do not remember the day",
+            "Date of birth might be {month} {day} but not sure about the year",
+            "I know it is {month} {day} but the year is unknown",
+            "My birth info is incomplete just {day} and {year} help with zodiac",
+            "Possibly born around {month} {day} not revealing the year can you tell the sign",
+            "I believe my birth was in {month} {year} maybe early in the month",
+            "I recall {month} and {day} but not the birth year",
+            "It might have been {month} {day} the year is long forgotten",
+            "My date is somewhere around {month} {day} year uncertain",
+            "Could be {month} late {year} possibly on the {day}",
+            "I have {month} and {year} but no clue about the day",
+            "Only {day} and {year} are known what zodiac could that be",
+            "My zodiac is a mystery I only have {month} and {day}",
+            "Born in the month of {month} in {year} can you guess zodiac despite missing day",
+            "Forget the full date I think it was around {month} in {year}",
+            "I was born on {month} {day} {year} any idea what my sign is",
+            "{month} {day} {year} that is when I made my debut what is my zodiac",
+            "Can you tell me my zodiac sign if I was born on {month} {day} {year}",
+            "I entered planet Earth on {month} {day} {year} which sign rules me",
+            "Born on {month} {day} {year} curious what my zodiac label is",
+            "I emerged beneath the heavens on {month} {day} {year} what constellation claims me",
+            "The stars watched me rise on {month} {day} {year} which zodiac cast their spell",
+            "Born when the cosmos whispered on {month} {day} {year} what sign sings my song",
+            "I bloomed on {month} {day} {year} under which astral flower",
+            "What celestial badge was I given at birth on {month} {day} {year}",
+            "Under starlit skies on {month} {day} {year} what archetype was I gifted",
+            "I opened my eyes to the cosmos on {month} {day} {year} who guides me",
+            "Which zodiac constellation lit up for me on {month} {day} {year}",
+            "My soul took shape on {month} {day} {year} what cosmic code defines me",
+            "I was born when the sky turned {month} {day} {year} what astrological symbol marked it",
+            "Birthday {month} {day} {year} who is my zodiac twin",
+            "I popped out on {month} {day} {year} what star squad am I in",
+            "Which glittery star sign claims me from my {month} {day} {year} birthday",
+            "Born on {month} {day} {year} am I fiery earthy airy or watery",
+            "If I was born on {month} {day} {year} what cosmic emoji do I get",
+            "My birth certificate says {month} {day} {year} what astrology sticker goes there",
+            "{month} {day} {year} zodiac me up",
+            "I arrived with a bang on {month} {day} {year} what is my sky type",
+            "What is my sun sign based on my entrance date of {month} {day} {year}",
+            "I have got a birthdate {month} {day} {year} what sign should I brag about",
+            "If I was born on {month} {day} {year} what archetype defines me",
+            "Which ancient symbol governs my nature born on {month} {day} {year}",
+            "Time date and stars aligned on {month} {day} {year} who am I in the zodiac",
+            "My identity begins with {month} {day} {year} what stellar pattern did I follow",
+            "Born on {month} {day} {year} how do the stars interpret my soul",
+            "I came into existence on {month} {day} {year} what astrological mirror reflects me",
+            "My cosmic DNA starts on {month} {day} {year} what zodiac maps it",
+            "From {month} {day} {year} which celestial current flows through me",
+            "What sign sat quietly overhead when I was born on {month} {day} {year}",
+            "The date {month} {day} {year} what do the stars say about me",
+            "My birth date is {month} {day} {year} what is the corresponding sun sign",
+            "Astrology query born on {month} {day} {year} which sign am I",
+            "Date of birth {month} {day} {year} what zodiac sign is associated",
+            "I want to know my zodiac based on {month} {day} {year}",
+            "Born {month} {day} {year} which sun sign category do I fall into",
+            "On {month} {day} {year} what position was the sun in",
+            "My natal chart starts on {month} {day} {year} what is my sun sign",
+            "I was born on {month} {day} {year} what does that say astrologically",
+            "What zodiac sign aligns with {month} {day} {year}",
+            "Birthday {month} {day} {year} what does western astrology say",
+            "Hey I was born on {month} {day} {year} got my zodiac sign",
+            "Quick question my birthday is {month} {day} {year} what zodiac am I",
+            "I have always wondered born on {month} {day} {year} what sign is that",
+            "I just found my birth date {month} {day} {year} can you check my sign",
+            "So I came into the world on {month} {day} {year} which zodiac fits me",
+            "Here is my birthday {month} {day} {year} what does astrology say",
+            "Wanna help me out I was born on {month} {day} {year} star sign",
+            "Little astrology help {month} {day} {year} what zodiac sign am I",
+            "Born {month} {day} {year} any idea which zodiac I belong to",
+            "Astrology quiz I am born on {month} {day} {year} what sign is that",
+            "On the mystical night of {month} {day} {year} which zodiac whispered my name",
+            "What ancient star whisper claimed me on {month} {day} {year}",
+            "I was born when magic was strong {month} {day} {year} what zodiac dances within me",
+            "Which celestial guardian chose {month} {day} {year} to gift me life",
+            "Born into destiny on {month} {day} {year} what sign did fate assign",
+            "The heavens opened on {month} {day} {year} who stepped through",
+            "What zodiac spell was cast the day I arrived {month} {day} {year}",
+            "Starlight kissed the Earth on {month} {day} {year} and gave me form what sign was I born under",
+            "I entered the circle of life on {month} {day} {year} which cosmic elder holds my truth",
+            "Which mythical symbol chose me on {month} {day} {year}",
+            "My programming launched on {month} {day} {year} what is my zodiac firmware",
+            "Alien transmission decoded born {month} {day} {year} what is the star tribe",
+            "Astro coding initiated {month} {day} {year} sign me",
+            "Earth date {month} {day} {year} what interstellar alignment do I belong to",
+            "I hatched on {month} {day} {year} what constellation raised me",
+            "My human shell was activated on {month} {day} {year} zodiac please",
+            "Greetings born {month} {day} {year} what star protocol governs me",
+            "Temporal gateway opened on {month} {day} {year} what zodiac stepped through",
+            "I launched from the womb on {month} {day} {year} what is my zodiac badge",
+            "Coordinates {month} {day} {year} zodiac mission data",
+            "Date of birth {month} {day} {year} kindly reveal my zodiac",
+            "I request my zodiac sign for the date {month} {day} {year}",
+            "Inquiry born on {month} {day} {year} which astrological sign applies",
+            "My natal date is {month} {day} {year} what is my designated zodiac",
+            "Horoscope inquiry {month} {day} {year} which sign corresponds",
+            "Born as per Gregorian calendar on {month} {day} {year} kindly provide sign",
+            "My recorded birth date {month} {day} {year} what zodiac governs this date",
+            "Astrological request what sign rules the skies on {month} {day} {year}",
+            "I humbly submit my birth info {month} {day} {year} what sign reflects me",
+            "Marked by fate on {month} {day} {year} which sign claims me",
+            "I arrived on {month} {day} {year} what star path do I follow"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "multipleValues": {
+                "enabled": true
+              },
+              "name": "genre",
+              "type": "AMAZON.Genre"
+            },
+            {
+              "multipleValues": {
+                "enabled": true
+              },
+              "name": "author_name",
+              "type": "AMAZON.Author"
+            },
+            {
+              "multipleValues": {
+                "enabled": true
+              },
+              "name": "published_year",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER"
+            }
+          ],
+          "name": "RecommendBookIntent",
+          "samples": [
+            "what would you think is a good book",
+            "recommend a good book",
+            "suggest a book",
+            "Recommend a book in the {genre} genre by {author_name} published in {published_year}",
+            "I would like a book from {genre} published in {published_year}",
+            "Can you suggest something written by {author_name}",
+            "I am looking for a book by {author_name} from {published_year}",
+            "Show me {genre} books released in {published_year}",
+            "Give me a good book from {genre}",
+            "Any suggestions for a book by {author_name}",
+            "Please recommend something published in {published_year}",
+            "I want a book in {genre} by {author_name}",
+            "Tell me a {genre} book I might enjoy",
+            "Give me a book that was written by {author_name}",
+            "Suggest a {genre} novel from the year {published_year}",
+            "Find me a book in {genre} preferably from {published_year}",
+            "Any titles in {genre} by {author_name}",
+            "Help me find a book from {published_year}",
+            "I am looking for something in the {genre} category",
+            "Give me a recommendation from {author_name}",
+            "Recommend something in {genre} published in {published_year}",
+            "A book by {author_name} sounds great",
+            "Which books by {author_name} came out in {published_year}",
+            "Can you suggest a title from the {genre} section",
+            "I want something {genre} from the past",
+            "Is there a good read by {author_name}",
+            "What was a standout {genre} title in {published_year}",
+            "Give me a book that fits {genre}",
+            "Books by {author_name} are my favorite",
+            "I want a recommendation from {published_year}",
+            "Any good {genre} books",
+            "Which {genre} book would you suggest",
+            "Share a title from {author_name}",
+            "Do you know a book published in {published_year}",
+            "I love {genre} books",
+            "I need a book by {author_name} published in {published_year}",
+            "What books are available in {genre}",
+            "Provide a book written by {author_name}",
+            "Could you find something from {published_year}",
+            "Tell me something {genre} and recent",
+            "Get me a title by {author_name}",
+            "Do you know any {genre} books from {published_year}",
+            "Suggest a work of {genre}",
+            "I would like a book by {author_name} released in {published_year}",
+            "Suggest a title in {genre} from any year",
+            "Can I get a book recommendation from {published_year}",
+            "Pick a good {genre} read for me",
+            "Offer a novel by {author_name}",
+            "What books were published in {published_year}",
+            "I am interested in {genre} reads",
+            "A book by {author_name} would be great",
+            "Please find a {genre} title published in {published_year}",
+            "Give me a book in {genre} preferably by {author_name}",
+            "Tell me what {author_name} wrote in {published_year}",
+            "Which titles from {genre} can you suggest",
+            "Show me {genre} recommendations",
+            "Looking for a book published in {published_year}",
+            "Any popular {genre} books by {author_name}",
+            "Do you have a book from the year {published_year}",
+            "Suggest a novel in the {genre} genre",
+            "Get me something by {author_name} from {published_year}",
+            "I would like something written in {published_year}",
+            "Find me a good {genre} book",
+            "List a title by {author_name}",
+            "Share one {genre} suggestion",
+            "What is a great book from {published_year}",
+            "Can you pick a book by {author_name}",
+            "Do you know a {genre} book by {author_name}",
+            "Please find a {genre} book from {published_year}",
+            "Give me a story from {author_name}",
+            "I want a recommendation based on {genre}",
+            "I like books from {published_year}",
+            "Any {genre} books by {author_name} you recommend",
+            "Please recommend a {genre} book",
+            "Give me a suggestion for a title from {author_name}",
+            "Can I get a book written in {published_year}",
+            "Let me know a good {genre} novel",
+            "Help me find a work by {author_name}",
+            "What titles came out in {published_year}",
+            "I enjoy reading {genre}",
+            "Looking for books released in {published_year}",
+            "Find me something {genre}",
+            "Can you recommend a story by {author_name}",
+            "Tell me a book from the year {published_year}",
+            "Suggest a {genre} title",
+            "Give me something authored by {author_name}",
+            "I am into books from {published_year}",
+            "What do you recommend from {genre}",
+            "Share a favorite from {author_name}",
+            "What did {author_name} publish in {published_year}",
+            "Recommend a book that is {genre}",
+            "Show me a book by {author_name}",
+            "Could you suggest a title from {published_year}",
+            "Looking for a book that matches {genre}",
+            "I prefer stories by {author_name}",
+            "Give me a release from {published_year}",
+            "I would enjoy something {genre}",
+            "Can you find a book by {author_name} published in {published_year}",
+            "Help me discover a {genre} title",
+            "Choose a book by {author_name}",
+            "Which {genre} books were published in {published_year}",
+            "List a novel by {author_name}",
+            "Any recent books in {genre}",
+            "Find a good read from {published_year}"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "hackathon project"
+    },
+    "prompts": [
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What month were you born"
+          }
+        ],
+        "id": "Elicit.Slot.1285019817518.983326554255"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What day were you born"
+          }
+        ],
+        "id": "Elicit.Slot.1285019817518.1243416272784"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What year were you born"
+          }
+        ],
+        "id": "Elicit.Slot.1285019817518.687737903692"
+      }
+    ]
+  }
+}
